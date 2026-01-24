@@ -19,3 +19,20 @@ This is a modified Android boot image with SELinux set to permissive mode and 32
 
 ## Made by Chad
 Built on CachyOS Linux
+
+## Available Kernel Images
+
+### Main Release:
+- **`images/boot-permissive-32bit.img`** (38MB)
+  - SELinux: Permissive
+  - 32-bit support: Enabled
+  - Cmdline: `androidboot.selinux=permissive androidboot.vm_has_32bit=1`
+
+### Variants/Testing:
+- **`images/variants/boot-samsung-permissive.img`**
+  - Similar modifications, untested
+  - Use with caution
+
+## How to Choose?
+If you're unsure, use the main release (`boot-permissive-32bit.img`).
+The variant file is included for reference/testing purposes.
