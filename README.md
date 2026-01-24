@@ -36,3 +36,27 @@ Built on CachyOS Linux
 ## How to Choose?
 If you're unsure, use the main release (`boot-permissive-32bit.img`).
 The variant file is included for reference/testing purposes.
+
+## Technical Details
+
+### File Comparison:
+- **boot-permissive-32bit.img**: 39M, built Jan 24
+- **boot-samsung-permissive.img**: 39M, built Jan 21
+- **Status**: Files differ in kernel parameters/timestamps
+
+### Byte-level Differences Found:
+- Bytes 17-18: Different kernel cmdline values
+- Bytes 65-67: Different header/timestamp information
+
+### Which Should You Use?
+- **For general use**: `boot-permissive-32bit.img` (newer build)
+- **For Samsung-specific testing**: `boot-samsung-permissive.img`
+- **If unsure**: Try the main image first
+
+### Verification:
+To verify which works on your device, test with:
+
+\`\`\`bash
+# Check kernel cmdline
+abootimg -i boot.img | grep "cmdline ="
+\`\`\`
