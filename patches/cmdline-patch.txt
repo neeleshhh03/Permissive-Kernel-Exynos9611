@@ -1,0 +1,1 @@
+loop.max_part=7 androidboot.selinux=permissive androidboot.vm_has_32bit=1 binder.vm_has_32bit=1
