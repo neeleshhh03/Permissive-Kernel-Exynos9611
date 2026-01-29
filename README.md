@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Permissive Kernel for Exynos 9611 F41
-
+#======EOL======
 ## What is this?
 This is a modified Android boot image with SELinux set to permissive mode and 32-bit app support enabled.
 
